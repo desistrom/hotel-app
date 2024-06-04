@@ -22,7 +22,10 @@ class _FiltersScreenState extends State<FiltersScreen> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: HotelAppTheme.buildLightTheme().backgroundColor,
+      color: HotelAppTheme.buildLightTheme()
+        .colorScheme
+        .background
+        .withOpacity(0.8),
       child: Scaffold(
         backgroundColor: Colors.transparent,
         body: Column(
@@ -366,7 +369,10 @@ class _FiltersScreenState extends State<FiltersScreen> {
   Widget getAppBarUI() {
     return Container(
       decoration: BoxDecoration(
-        color: HotelAppTheme.buildLightTheme().backgroundColor,
+        color: HotelAppTheme.buildLightTheme()
+            .colorScheme
+            .background
+            .withOpacity(0.8),
         boxShadow: <BoxShadow>[
           BoxShadow(
               color: Colors.grey.withOpacity(0.2),

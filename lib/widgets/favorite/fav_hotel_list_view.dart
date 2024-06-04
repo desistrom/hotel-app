@@ -64,7 +64,9 @@ class FavoriteHotelListView extends StatelessWidget {
                             ),
                             Container(
                               color: HotelAppTheme.buildLightTheme()
-                                  .backgroundColor,
+                                  .colorScheme
+                                  .background
+                                  .withOpacity(0.8),
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.start,

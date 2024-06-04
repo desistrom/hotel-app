@@ -140,7 +140,10 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
   Widget getListUI() {
     return Container(
       decoration: BoxDecoration(
-        color: HotelAppTheme.buildLightTheme().backgroundColor,
+        color: HotelAppTheme.buildLightTheme()
+            .colorScheme
+            .background
+            .withOpacity(0.8),
         boxShadow: <BoxShadow>[
           BoxShadow(
               color: Colors.grey.withOpacity(0.2),
@@ -225,7 +228,10 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
               padding: const EdgeInsets.only(right: 16, top: 8, bottom: 8),
               child: Container(
                 decoration: BoxDecoration(
-                  color: HotelAppTheme.buildLightTheme().backgroundColor,
+                  color: HotelAppTheme.buildLightTheme()
+                    .colorScheme
+                    .background
+                    .withOpacity(0.8),
                   borderRadius: const BorderRadius.all(
                     Radius.circular(38.0),
                   ),
@@ -280,7 +286,11 @@ class _HotelHomeScreenState extends State<HotelHomeScreen>
                   padding: const EdgeInsets.all(16.0),
                   child: Icon(FontAwesomeIcons.magnifyingGlass,
                       size: 20,
-                      color: HotelAppTheme.buildLightTheme().backgroundColor),
+                      color: HotelAppTheme.buildLightTheme()
+                        .colorScheme
+                    .background
+                    .withOpacity(0.8)
+                  ),
                 ),
               ),
             ),

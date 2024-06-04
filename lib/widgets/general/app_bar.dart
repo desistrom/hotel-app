@@ -11,7 +11,10 @@ class CustomAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: HotelAppTheme.buildLightTheme().backgroundColor,
+        color: HotelAppTheme.buildLightTheme()
+          .colorScheme
+          .background
+          .withOpacity(0.8),
         boxShadow: <BoxShadow>[
           BoxShadow(
               color: Colors.grey.withOpacity(0.2),
